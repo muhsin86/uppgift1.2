@@ -1,0 +1,48 @@
+﻿@page
+@{
+    ViewData["Title"] = "Razor";
+
+    DayOfWeek day = DateTime.Now.DayOfWeek;
+
+    string[] courses = { "DT057G, Webbutveckling |", "DT093G, Webbutveckling ||", "DT173G, Webbutveckling |||",};
+
+    string dateTime = DateTime.Now.ToString();
+}
+
+    <div class="rightcolumn">
+        <h1>Razor</h1>
+        <div class="card">
+            <h2>Information</h2>
+
+            <p><strong>Datum/Klockslag:</strong> @dateTime</p>
+
+            @if (day == DayOfWeek.Monday)
+            {
+                <p>Idag är måndag!</p>
+            }
+            else
+            {
+                <p>Idag är inte måndag!</p>
+            }
+
+            <p><strong>Kurser jag läste</strong></p>
+
+            <ul>
+                @foreach (var course in courses)
+                {
+                    <li>@course</li>
+                }
+
+            </ul>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+

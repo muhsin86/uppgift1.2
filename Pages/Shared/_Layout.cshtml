@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+          integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+    <link rel="stylesheet" href="~/css/StyleSheet.css" />
+    <title>@ViewData["Title"] - Uppgift1._2</title>
+</head>
+<body>
+    <div class="header">
+        <p style="float:left"><i class="fab fa-dyalog"></i> RAZOR PAGES</p>
+        <p style="float:right">@DateTime.Now.ToString("d")</p>
+        <h1>Uppgift 1.2</h1>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <a href="/Index">START</a>
+                <a href="/Razor">RAZOR</a>
+                <a href="/About">OM SIDAN</a>
+            </div>
+        </div>
+
+        @RenderBody()
+
+    </div>
+
+    <footer class="footer">
+        <p>Av Mohsen Ali Mohsen - kontakta mig via e-post: momo1600@gmail.com</p>
+    </footer>
+
+</body>
+</html>
+
